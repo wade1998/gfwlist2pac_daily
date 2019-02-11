@@ -6,14 +6,13 @@ setup_git() {
 }
 
 commit_product() {
-  git checkout product
   git add gfwlst.pac
   git commit -m "Pac file updated at $(date --rfc-3339="seconds")"
 }
 
 upload_files() {
-  git remote add origin https://${GH_TKN}@github.com/kmahyyg/gfwlist2pac_daily.git
-  git push --quiet --set-upstream origin product
+  git remote set-url origin https://${GH_TKN}@github.com/kmahyyg/gfwlist2pac_daily.git
+  git push --set-upstream origin product
 }
 
 setup_git

@@ -6,6 +6,7 @@ install:
   - sudo apt install curl bash -y
 
 script:
+  - git checkout product
   - ./gfwlst2pac.sh
 
 after_script:

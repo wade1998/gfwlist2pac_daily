@@ -1,12 +1,14 @@
 # gfwlist2pac_daily
 
-Use doubi's script to convert gfwlist to a proxy auto-config file daily via Travis CI
+Use Doubi's script to convert gfwlist to a proxy auto-config file daily via Travis CI
 
 Bash script copyright owner is the original author.
 
-Deploy and ci config copyright are licensed under agpl v3.
+Deploy and CI config copyright are licensed under agpl v3.
 
 # Usage
+
+Change your proxy client to listen to: `127.0.0.1:1084`
 
 Directly put this into your pac url: 
 

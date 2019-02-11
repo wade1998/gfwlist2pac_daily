@@ -8,7 +8,7 @@ install:
 script:
   - ./gfwlst2pac.sh
 
-deploy:
+after_script:
   - ./deploy.sh
 
 notifications:

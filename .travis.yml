@@ -1,0 +1,20 @@
+dist: xenial
+sudo: required
+
+install:
+  - sudo apt update -y
+  - sudo apt install curl bash -y
+
+script:
+  - ./gfwlst2pac.sh
+
+deploy:
+  - ./deploy.sh
+
+notifications:
+  webhooks:
+    urls:
+      - https://integrations.bonbotics.io/travis/webhook/McReXwoNYgeQzXAr10StqlRMROG9mkkwo61TkaJU9tE
+    on_success: never
+    on_failure: always
+    on_start: always

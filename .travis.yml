@@ -1,6 +1,12 @@
 dist: xenial
 sudo: required
 
+branches:
+  only:
+    - master
+  except:
+    - product
+
 install:
   - sudo apt update -y
   - sudo apt install curl bash -y
